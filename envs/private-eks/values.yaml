@@ -1,0 +1,10 @@
+wizApiToken:
+  clientEndpoint: "test" # Set to 'gov' for gov tenants only, otherwise leave blank
+  secret:
+      create: false # prevent the chart from creating a secret
+      name: "wiz-sa" # the secret name
+broker:
+  enabled: true
+autoCreateConnector:
+  connectorName: "Gal-Private-EKS" # Recommended
+  clusterFlavor: "EKS" # Recommended (Possible values: EKS, AKS, GKE, OKE, OpenShift, Kubernetes) Defaults to Kubernetes (self-managed).
